@@ -10,7 +10,7 @@ const ShowProducts = ({filter}) => {
 	const  handleDelete = async (id) => {
 		try{
 			console.log(id);
-		const res = await axios.delete(`http://localhost:3001/shoes/${id}`).then((res) => {
+		const res = await axios.delete(`https://nameless-cove-68474.herokuapp.com/shoes/${id}`).then((res) => {
 		setData(data.filter((item) => item.id !== id));
 		
 		});}catch(error){

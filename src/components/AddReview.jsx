@@ -26,7 +26,7 @@ const shoe = data.find((shoe) => shoe.id === param.id);
 		setRating(rating);
         //passing the review and rating to the database
        try{
-              const res = await axios.patch(`http://localhost:3001/shoes/${param.id}`, {
+              const res = await axios.patch(`https://nameless-cove-68474.herokuapp.com/shoes/${param.id}`, {
                 rating:[rating,...shoe.rating],
                 review:[review,...shoe.review]
               });

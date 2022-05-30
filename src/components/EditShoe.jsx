@@ -28,7 +28,7 @@ function EditShoe(props) {
 	const handleData = () => {
 		try {
 				const edit = async () => {
-					const res = await axios.patch(`http://localhost:3001/shoes/${id}`, {
+					const res = await axios.patch(`https://nameless-cove-68474.herokuapp.com/shoes/${id}`, {
 						image: url,
 						name: name,
 						price: price,

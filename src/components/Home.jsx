@@ -6,7 +6,7 @@ export default function Home() {
 	return (
 		<div>
 			<Card className="bg-dark text-white border-0 ">
-				<img src={`${data[0]&&data[0].image}`} width="500" />
+				{/* <img src={`${data[0]&&data[0].image}`} width="500" /> */}
 				<Card.ImgOverlay>
 					<Card.Title className="display-3 fw-bolder mb-0">
 						New Shoes That you dont need

@@ -6,7 +6,7 @@ export const ProductContext = createContext()
 
 
 export const ProductProvider = props=>{
-    const api = "http://localhost:3001/shoes";
+    const api = "https://nameless-cove-68474.herokuapp.com/shoes";
 	const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -17,9 +17,9 @@ export const ProductProvider = props=>{
 			try {
 				if (compoundMounted) {
 				const response = await axios.get(api);
-					setData(response.data);
+					setData(response.data.shoes);
 					compoundMounted = false;
-					console.log(response.data);
+					console.log(response.data.shoes);
 				}
 			} catch (error) {
 				console.log(error);

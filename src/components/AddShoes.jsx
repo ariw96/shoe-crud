@@ -29,7 +29,7 @@ const AddShoes = (props) => {
 		setName("");
 		setPrice(10);
 		try {
-			const res = await axios.post("http://localhost:3001/shoes", {
+			const res = await axios.post("https://nameless-cove-68474.herokuapp.com/shoes", {
 				id: `${data.length + 1}`,
 				image: url,
 				name: name,
